@@ -14,16 +14,15 @@ function sum(numbers) {
     if (!Array.isArray(numbers) || numbers.length === 0) {
          return 0;
      }
-   
-   numbers = [1, 5.2, 4, 0, -1]
  
    let sum = 0;
- 
    numbers.forEach(num => {
      sum += num;
    });
  
    return sum;
  }
+ const numbers = [1, 5.2, 4, 0, -1]
+ console.log(sum(numbers));
 
  
