@@ -6,4 +6,4 @@ function findMatching(drivers, searchName){
             )
 }
 let drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
-console.log(findMatching(drivers, "bobby"));
+console.log(findMatching(drivers, "bobby"))
