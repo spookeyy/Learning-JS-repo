@@ -5,7 +5,7 @@ function countPositivesSumNegatives(input) {
   }
 let countOfPositives = 0;
 let sumOfNegatives = 0;
-
+  
 for (const n of input){
     if(n < 0){
         sumOfNegatives += n;
@@ -14,7 +14,6 @@ for (const n of input){
         countOfPositives += 1;
     }
 }
-
 return [countOfPositives, sumOfNegatives]
 }
 
