@@ -4,7 +4,6 @@ String.prototype.isUpperCase = function() {
   }
 
   //alternative
-  //define the string prototype here
 String.prototype.isUpperCase = function(){
     if(this.toString() == this.toUpperCase()){
       return true;
