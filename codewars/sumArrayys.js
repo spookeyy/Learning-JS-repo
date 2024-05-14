@@ -25,4 +25,5 @@ function sum(numbers) {
  const numbers = [1, 5.2, 4, 0, -1]
  console.log(sum(numbers));
 
- 
+ //solution in one line
+ const sum = (numbers) => numbers.reduce((a, b) => a + b, 0) //reduce - add all elements in the array
