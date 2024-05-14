@@ -27,4 +27,7 @@ console.log(trim("Creating kata is fun", 14))
 
 //Arrow function
 
-const trim = (str, size) => str.length <= size ? str : str.slice(0, size - 3) + '...'
+const trim = (str, size) =>
+  str.length <= size
+    ? str
+    : str.slice(0, str.length > 3 ? size - 3 : size) + "...";
