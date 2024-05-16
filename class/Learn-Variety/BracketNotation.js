@@ -7,4 +7,3 @@ console.log(days)
 const cards = ["queen of hearts", "jack of clubs", "ten of diamonds", "ace of spades"];
 cards[2] = "king of diamonds"
 console.log(cards)
-
