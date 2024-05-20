@@ -27,6 +27,7 @@ function sum(numbers) {
 
  //solution in one line
  const sum = (numbers) => numbers.reduce((a, b) => a + b, 0) //reduce - add all elements in the array
+ //0 is the initial value. 0 + 1 = 1, 1 + 5.2 = 6.2
 
  //explain on reduce method
  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
