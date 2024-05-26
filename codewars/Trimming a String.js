@@ -14,14 +14,10 @@
 
 // Requested maximum length will be greater than 0. Input string will not be empty.
 
-function trim(str, size){
-    if (str.length <= size) {
-        return str
-    } else if (size <= 3) {
-        return str.slice(0, size) + '...'
-    } else {
-        return str.slice(0, size - 3) + '...'
-    }
+function trim(arr, size) {
+  if (arr.length <= size) return arr;
+  if (arr.length < 3) return arr.slice(0, size) + "...";
+  return arr.slice(0, size - 3) + "...";
 }
 console.log(trim("Creating kata is fun", 14))
 
@@ -30,4 +26,4 @@ console.log(trim("Creating kata is fun", 14))
 const trim = (str, size) =>
   str.length <= size
     ? str
-    : str.slice(0, str.length > 3 ? size - 3 : size) + "...";
+    : str.length < 3 ? str.slice(0, size) + "..." : str.slice(0, size - 3) + "...";
