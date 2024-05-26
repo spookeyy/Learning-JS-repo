@@ -11,3 +11,6 @@ for (let i = 0; i < iterations; i++){
     let nextFibo = fibos[i] + fibos[i + 1];
     fibos.push(nextFibo);
 }
+
+//log the 20th number
+console.log(fibos[19])
