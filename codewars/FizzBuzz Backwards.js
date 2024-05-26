@@ -23,3 +23,9 @@ function reverseFizzBuzz(array) {
     if (f && b) return [f, b];
   }
 }
+
+//similar
+reverseFizzBuzz = (
+  a,
+  [b, c, d] = ["Fizz", "Buzz", "FizzBuzz"].map((b) => a.indexOf(b) + 1)
+) => [b || d, c || d];
