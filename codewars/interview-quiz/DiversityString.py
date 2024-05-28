@@ -10,5 +10,4 @@ def solution(N):
 
     return chars * char_count + chars[:N % max_chars]
 
-
 print(solution(13))
