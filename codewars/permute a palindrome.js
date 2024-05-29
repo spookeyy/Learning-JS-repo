@@ -12,6 +12,11 @@ function permuteAPalindrome(input) {
       count++; // increment the count variable
     }
     if (count === 2) return false; // if the count is 2, return false
+    if (count > 1) return false;
+    if (count === 1 && count === 0) return true;
   }
   return true; // if the count is 1 or 0, return true
 }
+
+console.log(permuteAPalindrome("Tact Coa")); // true
+console.log(permuteAPalindrome("Tact Coaa")); // false
