@@ -16,5 +16,5 @@ function permuteAPalindrome(input) {
 console.log(permuteAPalindrome("aab")); //baa
 
 //shortened
-const permuteAPalindrome = (input) =>
+const PermuteAPalindrome = (input) =>
   [...input].sort().join("").replace(/(.)\1/g, "").length < 2;
