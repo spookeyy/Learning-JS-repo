@@ -24,3 +24,9 @@ console.log(countRepeats("abbcca"))
 //             count += 1
 //         prev_char = current_char
 //     return count
+
+
+// javascript
+// function countRepeats(str) {
+//   return (str.match(/(.)(?=\1)/g) || []).length;
+// }
